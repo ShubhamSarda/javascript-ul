@@ -1,0 +1,1 @@
+(()=>{"use strict";["shubham","alex","deepak","john"].forEach((e=>{var o;o=e,console.log(`Welcome ${o}`)})),document.querySelector("p").textContent="Updated File!"})();

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notNotion - Your Custom News Portal With Selected Categories And Updates!</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/" class="logo">
+                    <img src="/images/logo.svg" alt="notNotion">
+                    <span>notNotion</span>
+                </a>
+                <nav>
+                    <ul class="nav-items">
+                        <li>
+                            <a href="/quiz">Quiz</a>
+                        </li>
+                        <li>
+                            <a href="/todo-list">Todo List</a>
+                        </li>
+                        <li class="active">
+                            <a href="/news">News</a>
+                        </li>
+                        <li>
+                            <a href="/progress-board">Progress Board</a>
+                        </li>
+                        <li>
+                            <a href="/budget-manager">Budget Manager</a>
+                        </li>
+                        <li>
+                            <a href="/bookmark-manager">Bookmarks</a>
+                        </li>
+                        <span class="newsletter">Join Newsletter</span>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="outer-wrap">
+            <div class="inner-wrap">
+                <!-- <section class="heading">
+                    <p class="title">notNotion</p>
+                    <p class="subtitle">Your Custom News Portal With Selected Categories And Updates!</p>
+                </section> -->
+                <section class="news">
+                    <div class="category">
+                        <span class="active" data-id="/top-headlines?country=us&category=business">US</span>
+                        <span data-id="/top-headlines?country=in&category=business">India</span>
+                        <span data-id="/everything?q=crypto&sortBy=publishedAt">Cryptocurrency</span>
+                        <span data-id="/top-headlines?sources=techcrunch">Startups</span>
+                    </div>
+                    <div class="cards">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="brand-name">
+                    <span>© notNotion by Shubham</span>
+                </div>
+                <div class="social-icons">
+                    <i class="bi bi-twitter social"></i>
+                    <i class="bi bi-linkedin social"></i>
+                    <i class="bi bi-youtube social"></i>
+                    <i class="bi bi-instagram social"></i>
+                </div>
+            </div>
+        </div>
+        <section class="modal">
+            <div class="newsletter-modal">
+                <p>Join Newsletter Now!</p>
+                <form>
+                    <input type="text" name="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
+    </footer>  
+    <script src="/main.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>

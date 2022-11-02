@@ -1,0 +1,1 @@
+(()=>{"use strict";["shubham","alex","deepak","john"].forEach((function(e){var o;o=e,console.log("Welcome ".concat(o))})),document.querySelector("p").textContent="".concat("NPM Run Build!")})();

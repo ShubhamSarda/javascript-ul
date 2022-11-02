@@ -1,0 +1,1 @@
+(()=>{"use strict";["shubham","alex","deepak","john"].forEach((function(o){var e;e=o,console.log("Welcome ".concat(e))})),document.querySelector("p").textContent="".concat("---------------"),console.log("----------------------------")})();

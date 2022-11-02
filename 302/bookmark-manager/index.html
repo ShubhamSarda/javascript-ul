@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notNotion - Your Custom Bookmark Manager</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="outer-wrap">
+            <div class="inner-wrap">
+                <section class="heading">
+                    <p class="title">notNotion</p>
+                    <p class="subtitle">Your Custom Bookmark Manager</p>
+                </section>
+                <section class="create">
+                    <form class="add">
+                        <input type="text" name="link" id="link" placeholder="Link" autocomplete="off">
+                        <input type="text" name="title" placeholder="Title" autocomplete="off" maxlength="35">
+                        <select name="category">
+                            <option value="youtube">Youtube</option>
+                            <option value="netflix">Netflix</option>
+                            <option value="prime">Prime</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="submit" value="Bookmark" id="bookmark">
+                    </form>
+                </section>
+                <section class="bookmark">
+                    <div class="category-list">
+                        <span class="active">All</span>
+                        <span>Youtube</span>
+                        <span>Netflix</span>
+                        <span>Prime</span>
+                        <span>Other</span>
+                    </div>
+                    <div class="cards">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

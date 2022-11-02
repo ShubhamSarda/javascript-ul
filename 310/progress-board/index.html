@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notNotion - Web Based Kanban Style Application To Handle Project Progress</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/" class="logo">
+                    <img src="/images/logo.svg" alt="notNotion">
+                    <span>notNotion</span>
+                </a>
+                <nav>
+                    <ul class="nav-items">
+                        <li>
+                            <a href="/quiz">Quiz</a>
+                        </li>
+                        <li>
+                            <a href="/todo-list">Todo List</a>
+                        </li>
+                        <li>
+                            <a href="/news">News</a>
+                        </li>
+                        <li class="active">
+                            <a href="/progress-board">Progress Board</a>
+                        </li>
+                        <li>
+                            <a href="/budget-manager">Budget Manager</a>
+                        </li>
+                        <li>
+                            <a href="/bookmark-manager">Bookmarks</a>
+                        </li>
+                        <span class="newsletter">Join Newsletter</span>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="outer-wrap">
+            <div class="inner-wrap">
+                <!-- <section class="heading">
+                    <p class="title">notNotion</p>
+                    <p class="subtitle">Web Based Kanban Style Application To Handle Project Progress</p>
+                </section> -->
+                <section class="kanban">
+                    <div class="taskbox">
+                        <div class="title">
+                            <p>TODO</p>
+                            <span class="todo">2</span>
+                        </div>
+                        <div class="cards todo" data-id="0">
+                        </div>
+                        <form class="add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="bi bi-plus" data-id="0" name="submit"></button>
+                        </form>
+                    </div>
+                    <div class="taskbox">
+                        <div class="title">
+                            <p>IN PROGRESS</p>
+                            <span class="pending">1</span>
+                        </div>
+                        <div class="cards pending" data-id="1">
+                        </div>
+                        <form class="add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="bi bi-plus" data-id="1" name="submit"></button>
+                        </form>
+                    </div>
+                    <div class="taskbox">
+                        <div class="title">
+                            <p>COMPLETED</p>
+                            <span class="completed">2</span>
+                        </div>
+                        <div class="cards completed" data-id="2">
+                        </div>
+                        <form class="add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="bi bi-plus" data-id="2" name="submit"></button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="brand-name">
+                    <span>© notNotion by Shubham</span>
+                </div>
+                <div class="social-icons">
+                    <i class="bi bi-twitter social"></i>
+                    <i class="bi bi-linkedin social"></i>
+                    <i class="bi bi-youtube social"></i>
+                    <i class="bi bi-instagram social"></i>
+                </div>
+            </div>
+        </div>
+        <section class="modal">
+            <div class="newsletter-modal">
+                <p>Join Newsletter Now!</p>
+                <form>
+                    <input type="text" name="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
+    </footer>
+
+    <script src="/main.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

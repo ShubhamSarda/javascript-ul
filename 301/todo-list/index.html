@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notNotion - Manage And Search Your Pending Tasks In Clicks!</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/" class="logo">
+                    <img src="/images/logo.svg" alt="notNotion">
+                    <span>notNotion</span>
+                </a>
+                <nav>
+                    <ul class="nav-items">
+                        <li>
+                            <a href="/quiz">Quiz</a>
+                        </li>
+                        <li class="active">
+                            <a href="/todo-list">Todo List</a>
+                        </li>
+                        <li>
+                            <a href="/news">News</a>
+                        </li>
+                        <li>
+                            <a href="/progress-board">Progress Board</a>
+                        </li>
+                        <li>
+                            <a href="/budget-manager">Budget Manager</a>
+                        </li>
+                        <li>
+                            <a href="/bookmark-manager">Bookmarks</a>
+                        </li>
+                        <span class="newsletter">Join Newsletter</span>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="wrap">
+            <!-- <section class="heading">
+                <p class="title">notNotion</p>
+                <p class="subtitle">Manage And Search Your Pending Tasks In Clicks!</p>
+            </section> -->
+
+            <section class="task-manager">
+                <div class="search-box">
+                    <form class="search">
+                        <input type="text" name="task" placeholder="search task" autocomplete="off">
+                        <i class="bi bi-x-circle reset"></i>
+                    </form>
+                </div>
+                <div class="task-box">
+                    <ul class="tasks">
+                        <li>
+                            <span>Video Recording</span>
+                            <i class="bi bi-trash-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Editing</span>
+                            <i class="bi bi-trash-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Audio Recording</span>
+                            <i class="bi bi-trash-fill delete"></i>
+                        </li>
+                    </ul>
+                    <form class="add">
+                        <input type="text" name="task" placeholder="add task" autocomplete="off">
+                        <input type="submit" value="Add">
+                    </form>
+                </div>
+                <div class="message">
+                    <span></span>
+                    <button class="clear">Clear All</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="brand-name">
+                    <span>© notNotion by Shubham</span>
+                </div>
+                <div class="social-icons">
+                    <i class="bi bi-twitter social"></i>
+                    <i class="bi bi-linkedin social"></i>
+                    <i class="bi bi-youtube social"></i>
+                    <i class="bi bi-instagram social"></i>
+                </div>
+            </div>
+        </div>
+        <section class="modal">
+            <div class="newsletter-modal">
+                <p>Join Newsletter Now!</p>
+                <form>
+                    <input type="text" name="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
+    </footer>
+
+    <script src="/main.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>

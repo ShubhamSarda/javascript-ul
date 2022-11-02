@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notNotion -  Daily Quiz To Test Your JavaScript Knowledge!</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/" class="logo">
+                    <img src="/images/logo.svg" alt="notNotion">
+                    <span>notNotion</span>
+                </a>
+                <nav>
+                    <ul class="nav-items">
+                        <li class="active">
+                            <a href="/quiz">Quiz</a>
+                        </li>
+                        <li>
+                            <a href="/todo-list">Todo List</a>
+                        </li>
+                        <li>
+                            <a href="/news">News</a>
+                        </li>
+                        <li>
+                            <a href="/progress-board">Progress Board</a>
+                        </li>
+                        <li>
+                            <a href="/budget-manager">Budget Manager</a>
+                        </li>
+                        <li>
+                            <a href="/bookmark-manager">Bookmarks</a>
+                        </li>
+                        <span class="newsletter">Join Newsletter</span>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="quiz">
+            <!-- <div class="heading">
+                <p class="title">notNotion</p>
+                <p class="subtitle">Daily Quiz To Test Your JavaScript Knowledge!</p>
+            </div> -->
+
+            <div class="result hide">
+                <p></p>
+                <p class="reload">
+                    <button onclick="document.location.reload(true)">Try Again?</button>
+                </p>
+            </div>
+
+            <form class="quiz-form">
+                <div class="question">
+                    <p>1. Inside which HTML element do we put the JavaScript?</p>
+                    <div class="option">
+                        <input type="radio" name="q1" id="" value="A" checked>
+                        <label for="">js</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="" value="B">
+                        <label for="">javascript</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="" value="C">
+                        <label for="">scripting</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="" value="D">
+                        <label for="">script</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>2. Where is the correct place to insert a JavaScript file?</p>
+                    <div class="option">
+                        <input type="radio" name="q2" id="" value="A" checked>
+                        <label for="">Inside head section</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="" value="B">
+                        <label for="">At the end of body section</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="" value="C">
+                        <label for="">After body section</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="" value="D">
+                        <label for="">None</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>3. What is the correct syntax for referring to an external script called "index.js"?</p>
+                    <div class="option">
+                        <input type="radio" name="q3" id="" value="A" checked>
+                        <label for="">&#60;script name="index.js"&#62;</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" id="" value="B">
+                        <label for="">&#60;script href="index.js"&#62;</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" id="" value="C">
+                        <label for="">&#60;script src="index.js"&#62;</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" id="" value="D">
+                        <label for="">All</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>4. How do you write "Hello World" in an alert box?</p>
+                    <div class="option">
+                        <input type="radio" name="q4" id="" value="A" checked>
+                        <label for="">pop("Hello World");</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" id="" value="B">
+                        <label for="">alert("Hello World");</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" id="" value="C">
+                        <label for="">popUp("Hello World");</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" id="" value="D">
+                        <label for="">alertUp("Hello World");</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>5. Which operator is used to assign a value to a variable?</p>
+                    <div class="option">
+                        <input type="radio" name="q5" id="" value="A" checked>
+                        <label for="">-</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" id="" value="B">
+                        <label for="">*</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" id="" value="C">
+                        <label for="">+</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" id="" value="D">
+                        <label for="">=</label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="brand-name">
+                    <span>© notNotion by Shubham</span>
+                </div>
+                <div class="social-icons">
+                    <i class="bi bi-twitter social"></i>
+                    <i class="bi bi-linkedin social"></i>
+                    <i class="bi bi-youtube social"></i>
+                    <i class="bi bi-instagram social"></i>
+                </div>
+            </div>
+        </div>
+        <section class="modal">
+            <div class="newsletter-modal">
+                <p>Join Newsletter Now!</p>
+                <form>
+                    <input type="text" name="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
+    </footer>  
+
+    <script src="/main.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>

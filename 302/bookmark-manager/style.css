@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+:root{
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.outer-wrap{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F5F7FA;
+    padding: 30px;
+}
+
+.inner-wrap{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.heading {
+    margin: 30px auto;
+}
+
+.heading .title{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+}
+
+.heading .subtitle{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 300;
+    text-align: center;
+}
+
+.create {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.create .add {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.create .add input#link{
+    flex-grow: 1;
+}
+
+.create form input, .create form select{
+    font-size: 18px;
+    border-radius: 7px;
+    border: 1px solid #D1D1D1;
+    padding: 10px;
+}
+
+.create form option{
+    font-size: 18px;
+}
+
+.create form.add input#bookmark{
+    border: 0px;
+    border-radius: 3px;
+    background-color: #2666CF;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.category-list{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-list span{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin: 5px;
+}
+
+.category-list span:hover{
+    background-color: #EAEBEF;
+}
+
+.category-list .active{
+    background-color: #0D479a !important;
+    color: #FFFFFF;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0px;
+}
+
+.card{
+    background-color: #FFFFFF;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    border-radius: 5px;
+    width: 350px;
+    margin: 7px 0px;
+}
+
+.card:hover{
+    background-color: #F7F7F7;
+}
+
+.card .sub-information{
+    display: flex;
+    margin-top: 10px;
+}
+
+.card .sub-information p{
+    flex-grow: 1;
+}
+
+.card .sub-information .category{
+    background-color: #233E8B;
+    padding: 2px 7px;
+    border-radius: 3px;
+    color: #FFFFFF;
+}
+
+.card .sub-information .category.netflix{
+    background-color: #b3010a;
+}
+
+.card .sub-information .category.youtube{
+    background-color: #4d4d4d;
+}
+
+.card .sub-information .category.prime{
+    background-color: #1468c2;
+}
+
+.card .sub-information .category.other{
+    background-color: #c47600;
+}
+
+.card .sub-information i{
+    margin: 7px;
+    font-size: 18px;
+}
+
+.card .sub-information .website{
+    color: #393E46;
+}
+
+.card .sub-information .search{
+    color: #2666CF;
+}
+
+.card .sub-information .delete{
+    color: #EB596E;
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    .create .add{
+        flex-direction: column;
+    }
+
+    .card {
+        flex-grow: 1;
+    }
+}

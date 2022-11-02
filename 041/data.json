@@ -1,0 +1,67 @@
+{
+    "status": {
+      "timestamp": "2022-02-20T21:56:01.808Z",
+      "error_code": 0,
+      "error_message": null,
+      "elapsed": 20,
+      "credit_count": 1,
+      "notice": null,
+      "total_count": 9403
+    },
+    "data": [
+                {
+                    "id": 1,
+                    "name": "Bitcoin",
+                    "symbol": "BTC",
+                    "slug": "bitcoin",
+                    "num_market_pairs": 9169,
+                    "date_added": "2013-04-28T00:00:00.000Z",
+                    "max_supply": 21000000,
+                    "circulating_supply": 18963893,
+                    "total_supply": 18963893,
+                    "cmc_rank": 1,
+                    "quote": {
+                        "USD": {
+                            "price": 38200.89617819814,
+                            "last_updated": "2022-02-20T21:54:00.000Z"
+                        }
+                    }
+                },
+                {
+                    "id": 1027,
+                    "name": "Ethereum",
+                    "symbol": "ETH",
+                    "slug": "ethereum",
+                    "num_market_pairs": 5515,
+                    "date_added": "2015-08-07T00:00:00.000Z",
+                    "max_supply": null,
+                    "circulating_supply": 119662430.874,
+                    "total_supply": 119662430.874,
+                    "cmc_rank": 2,
+                    "quote": {
+                        "USD": {
+                            "price": 2593.429291173747,
+                            "last_updated": "2022-02-20T21:54:00.000Z"
+                        }
+                    }
+                },
+                {
+                    "id": 825,
+                    "name": "Tether",
+                    "symbol": "USDT",
+                    "slug": "tether",
+                    "num_market_pairs": 28249,
+                    "date_added": "2015-02-25T00:00:00.000Z",
+                    "max_supply": null,
+                    "circulating_supply": 79019501685.78094,
+                    "total_supply": 81064697052.53387,
+                    "cmc_rank": 3,
+                    "quote": {
+                        "USD": {
+                            "price": 1.0003621095304658,
+                            "last_updated": "2022-02-20T21:54:00.000Z"
+                        }
+                    }
+                }
+    ]
+  }

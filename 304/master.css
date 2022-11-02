@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+:root {
+    --box-shadow: #00000029 0px 1px 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+main{
+    min-height: 85vh;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.header{
+    background-color: #FFFFFF;
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0px 20px;
+    border-bottom: 1px solid #0000001a;
+}
+
+.header .logo{
+    max-width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img{
+    width: 100%;
+}
+
+.header .logo span{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #393E46;
+}
+
+.header .nav-items{
+    display: flex;
+}
+
+.header .nav-items li{
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.header .nav-items li:hover{
+    background-color: #EEEEEE;
+}
+
+.header .nav-items li.active{
+    background-color: #EEEEEE;
+}
+
+.header .nav-items a{
+    color: #393E46;
+}
+
+.header .hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.header .hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #393E46;
+    transition: all 0.3s ease-in-out;
+}
+
+.newsletter{
+    background-color: #0d479a;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.newsletter:hover{
+    background-color: #0c3d81 !important;
+}
+
+@media (max-width: 960px){
+    .header .nav-items{
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: #FFFFFF;
+        color: #393E46;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .header .nav-items.active{
+        left: 0px;
+    }
+
+    .header .nav-items li{
+        border-bottom: 1px solid #0000001a;
+        padding: 20px;
+    }
+
+    .header .newsletter{
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .header .hamburger{
+        display: block;
+    }
+
+    .header .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .header .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .header .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}

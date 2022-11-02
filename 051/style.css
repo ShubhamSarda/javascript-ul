@@ -1,0 +1,34 @@
+a {
+    text-decoration: none;
+    color: #0094d8;
+}
+
+.change {
+    background-color: lightgrey;
+}
+
+.highlight {
+    background-color: salmon;
+}
+
+.important {
+    font-weight: 900;
+    border: solid 2px rgb(0, 109, 0);
+    background-color: azure;
+}
+
+.success {
+    border: solid 2px rgb(0, 109, 0);
+}
+
+.error {
+    border: solid 2px rgb(207, 0, 0);
+}
+
+.active {
+    border: solid 2px rgb(0, 105, 224);
+}
+
+.inactive {
+    border: solid 2px rgb(190, 224, 0);
+}

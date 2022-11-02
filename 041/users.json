@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Shubham Sarda",
+        "age": 25,
+        "email": "shubham@gmail.com"
+    }, 
+    {
+        "name": "Alex Pace",
+        "age": 25,
+        "email": "alex@gmail.com"
+    }, 
+    {
+        "name": "Deepak K",
+        "age": 25,
+        "email": "deepak@gmail.com"
+    }, 
+    {
+        "name": "John M",
+        "age": 25,
+        "email": "john@gmail.com"
+    }
+]
