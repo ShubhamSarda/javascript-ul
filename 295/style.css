@@ -21,15 +21,14 @@
 
 .outer-wrap{
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
+    background-color: #0D479A;
+    padding: 30px;
 }
 
 .inner-wrap{
     max-width: 1200px;
-    margin: 30px auto;
-    background-color: #0D479A;
-    padding: 35px 0px;
-    border-radius: 5px;
+    margin: auto;
 }
 
 .heading{

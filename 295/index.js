@@ -101,5 +101,4 @@ taskbox.forEach(column => {
             });
         }
     });
-
 });
