@@ -83,6 +83,10 @@
     border-radius: 7px;
 }
 
+.cards{
+    padding: 10px 5px;
+}
+
 .card{
     background-color: #FFFFFF;
     margin: 10px 0px;
